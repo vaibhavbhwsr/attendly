@@ -14,11 +14,18 @@ import os
 import sys
 from pathlib import Path
 
+import dotenv
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # App directory
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+
+# Load .env
+dotenv_file = os.path.join(BASE_DIR, ".env")
+if os.path.isfile(dotenv_file):
+    dotenv.load_dotenv(dotenv_file)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -89,8 +96,8 @@ DATABASES = {
         'NAME': os.getenv('DATABASE_NAME', default='attendly_db'),
         'USER': os.getenv('DATABASE_USER', default='postgres'),
         'PASSWORD': os.getenv('DATABASE_PASSWORD', default='psql'),
-        'HOST': os.getenv('DATABASE_HOST', default='localhost'),
-        'PORT': os.getenv('DATABASE_PORT', default=5431),
+        'HOST': os.getenv('DATABASE_HOST', default='db'),
+        'PORT': os.getenv('DATABASE_PORT', default=5432),
     }
 }
 
