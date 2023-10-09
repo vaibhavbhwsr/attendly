@@ -1,0 +1,19 @@
+-r requirements.txt
+
+# Main
+Django
+psycopg2-binary
+python-dotenv
+
+# Development tools
+django-debug-toolbar
+django-extensions
+ipython
+
+# Clean Coding
+flake8
+isort
+black
+
+# Deployment
+gunicorn
