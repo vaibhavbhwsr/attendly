@@ -10,6 +10,8 @@ services:
       - POSTGRES_DB=attendly_db
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=psql
+    ports:  # for development without docker
+      - 5431:5432
 
   # Django webapp
   app:

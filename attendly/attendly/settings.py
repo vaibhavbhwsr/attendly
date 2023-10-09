@@ -89,8 +89,8 @@ DATABASES = {
         'NAME': os.getenv('DATABASE_NAME', default='attendly_db'),
         'USER': os.getenv('DATABASE_USER', default='postgres'),
         'PASSWORD': os.getenv('DATABASE_PASSWORD', default='psql'),
-        'HOST': os.getenv('DATABASE_HOST', default='db'),
-        'PORT': os.getenv('DATABASE_PORT', default=5432),
+        'HOST': os.getenv('DATABASE_HOST', default='localhost'),
+        'PORT': os.getenv('DATABASE_PORT', default=5431),
     }
 }
 

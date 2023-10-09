@@ -2,6 +2,7 @@
 
 # Main
 Django
+djangorestframework
 psycopg2-binary
 python-dotenv
 
@@ -9,6 +10,7 @@ python-dotenv
 django-debug-toolbar
 django-extensions
 ipython
+ipdb
 
 # Clean Coding
 flake8

@@ -24,7 +24,7 @@ class RFIDDevice(BaseModel):
 
 class RFIDTag(models.Model):
     profile = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
-    tag_uid = models.CharField(unique=True, max_length=50)
+    tag_uid = models.CharField(unique=True, max_length=50, db_index=True)
 
     def __str__(self):
         return str(self.tag_uid)
