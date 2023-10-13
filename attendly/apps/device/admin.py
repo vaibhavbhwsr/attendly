@@ -16,8 +16,7 @@ class RFIDTagAdmin(admin.ModelAdmin):
 
     @admin.display(ordering="attends", description="Overall Attendance")
     def overall_attends(self, obj):
-        import ipdb; ipdb.set_trace()
-        return self.attendance_set.count()
+        return obj.attendance_set.count()
 
 
 admin.site.register(RFIDDevice)
