@@ -91,17 +91,26 @@ TEMPLATES = [
 WSGI_APPLICATION = 'attendly.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+# # Database
+# # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# # PostgreSQL
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': os.getenv('DATABASE_NAME', default='attendly_db'),
+#         'USER': os.getenv('DATABASE_USER', default='postgres'),
+#         'PASSWORD': os.getenv('DATABASE_PASSWORD', default='psql'),
+#         'HOST': os.getenv('DATABASE_HOST', default='db'),
+#         'PORT': os.getenv('DATABASE_PORT', default=5432),
+#     }
+# }
+
+# SQLite
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('DATABASE_NAME', default='attendly_db'),
-        'USER': os.getenv('DATABASE_USER', default='postgres'),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD', default='psql'),
-        'HOST': os.getenv('DATABASE_HOST', default='db'),
-        'PORT': os.getenv('DATABASE_PORT', default=5432),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
