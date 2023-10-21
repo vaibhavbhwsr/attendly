@@ -10,8 +10,8 @@ class RFIDTagAdmin(admin.ModelAdmin):
     Admin View for RFIDTag
     """
 
-    list_display = ("tag_uid", "profile", "overall_attends")
-    list_filter = ("attendance__subject",)
+    list_display = ("tag_uid", "profile", "overall_attends", "registered")
+    list_filter = ("attendance__subject", "registered")
     search_fields = ('profile__name', 'profile__enroll_no')
 
     @admin.display(ordering="attends", description="Overall Attendance")
