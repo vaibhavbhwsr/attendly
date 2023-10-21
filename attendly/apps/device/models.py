@@ -39,3 +39,5 @@ class RFIDTag(models.Model):
     def checked_registered(self):
         if self.profile:
             self.registered = True
+        else:
+            self.registered = False
