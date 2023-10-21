@@ -23,8 +23,19 @@ class RFIDDevice(BaseModel):
 
 
 class RFIDTag(models.Model):
-    profile = models.OneToOneField(UserProfile, on_delete=models.CASCADE)
+    profile = models.OneToOneField(
+        UserProfile, on_delete=models.CASCADE, null=True, blank=True
+    )
     tag_uid = models.CharField(unique=True, max_length=50, db_index=True)
+    registered = models.BooleanField(default=False)
 
     def __str__(self):
         return str(self.tag_uid)
+
+    def save(self, *args, **kwargs):
+        self.checked_registered()
+        return super().save(*args, **kwargs)
+
+    def checked_registered(self):
+        if self.profile:
+            self.registered = True

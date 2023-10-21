@@ -10,7 +10,7 @@ class AttendanceCreateAPIView(CreateAPIView):
 
     def create(self, request, *args, **kwargs):
         device = RFIDDevice.objects.get(device_no=request.data.get("device"))
-        tag = RFIDTag.objects.get(tag_uid=request.data.get("tag"))
+        tag, created = RFIDTag.objects.get_or_create(tag_uid=request.data.get("tag"))
 
         request.data.update(tag=tag.id, **DeviceSerializer(device).data)
         request.data["device"] = device.id
