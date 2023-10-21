@@ -22,7 +22,7 @@ class RFIDDevice(BaseModel):
         return str(self.device_no)
 
 
-class RFIDTag(models.Model):
+class RFIDTag(BaseModel):
     profile = models.OneToOneField(
         UserProfile, on_delete=models.CASCADE, null=True, blank=True
     )
