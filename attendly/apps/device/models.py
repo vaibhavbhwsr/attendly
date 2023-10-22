@@ -41,3 +41,6 @@ class RFIDTag(BaseModel):
             self.registered = True
         else:
             self.registered = False
+
+    def overall_attends(self):
+        return self.attendance_set.count()

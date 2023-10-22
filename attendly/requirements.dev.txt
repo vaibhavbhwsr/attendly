@@ -22,3 +22,4 @@ gunicorn
 
 # Admin
 django-jazzmin
+django-admin-rangefilter

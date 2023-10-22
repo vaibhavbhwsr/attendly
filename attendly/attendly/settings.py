@@ -53,6 +53,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Installed pacakage
+    'rangefilter',
+
     # Custom apps
     'core',
     'profiles',

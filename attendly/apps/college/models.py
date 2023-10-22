@@ -1,5 +1,7 @@
 from django.db import models
+
 from core.models import BaseModel
+from profiles.models import UserProfile
 
 # Create your models here.
 
@@ -74,4 +76,9 @@ class Attendance(BaseModel):
     )
 
     def __str__(self):
-        return f"{self.tag.profile.name} | {self.room}"
+        return f"{self.tag.profile}"
+
+
+class AttendanceInsight(UserProfile):
+    class Meta:
+        proxy = True
