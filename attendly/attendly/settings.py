@@ -53,6 +53,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Added
+    'rest_framework',
+
     # Custom apps
     'core',
     'profiles',
