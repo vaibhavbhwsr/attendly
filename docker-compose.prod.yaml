@@ -6,7 +6,7 @@ services:
     build:
       context: ./attendly
     volumes:
-      - websrc:/attendly
+      - ./attendly:/attendly
     ports:
       - "8000:8000"
     command: gunicorn attendly.wsgi:application --bind 0.0.0.0:8000
@@ -31,10 +31,9 @@ services:
       - "80:80"
     volumes:
       - ./nginx/nginx-setup.conf:/etc/nginx/conf.d/default.conf:ro
-      - websrc:/attendly
+      - ./attendly:/attendly
     depends_on:
       - wsgi_app
 
 volumes:
-  websrc:
   database:
