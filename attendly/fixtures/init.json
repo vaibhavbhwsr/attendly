@@ -1,29 +1,5 @@
 [
     {
-        "model": "device.rfiddevice",
-        "pk": 1,
-        "fields": {
-            "created_at": "2023-10-09T12:45:36.139Z",
-            "modified_at": "2023-10-09T18:49:16.911Z",
-            "is_deleted": false,
-            "device_no": "IoT-1",
-            "room": 4,
-            "course": 1,
-            "subject": 2,
-            "workshop": null,
-        },
-    },
-    {
-        "model": "device.rfidtag",
-        "pk": 1,
-        "fields": {"profile": 1, "tag_uid": "111111aa"},
-    },
-    {
-        "model": "device.rfidtag",
-        "pk": 2,
-        "fields": {"profile": 2, "tag_uid": "222222bb"},
-    },
-    {
         "model": "college.campus",
         "pk": 2,
         "fields": {
@@ -31,8 +7,8 @@
             "modified_at": "2023-10-09T12:28:58.062Z",
             "is_deleted": false,
             "name": "One",
-            "address": "Mandsaur University By Pass Square, Revas Devda Road, S.H.-31, Mandsaur (M.P) -458001",
-        },
+            "address": "Mandsaur University By Pass Square, Revas Devda Road, S.H.-31, Mandsaur (M.P) -458001"
+        }
     },
     {
         "model": "college.campus",
@@ -42,8 +18,8 @@
             "modified_at": "2023-10-09T12:30:09.127Z",
             "is_deleted": false,
             "name": "Two",
-            "address": "BRNCOP Campus, Opp Krishi Upaj Mandi, Mandsaur, Madhya Pradesh 458001",
-        },
+            "address": "BRNCOP Campus, Opp Krishi Upaj Mandi, Mandsaur, Madhya Pradesh 458001"
+        }
     },
     {
         "model": "college.stream",
@@ -53,8 +29,8 @@
             "modified_at": "2023-10-09T12:20:31.692Z",
             "is_deleted": false,
             "name": "CSA",
-            "full_form": "Computer Science and Application",
-        },
+            "full_form": "Computer Science and Application"
+        }
     },
     {
         "model": "college.stream",
@@ -64,8 +40,8 @@
             "modified_at": "2023-10-09T12:20:46.019Z",
             "is_deleted": false,
             "name": "CSE",
-            "full_form": "Computer Science and Engineering",
-        },
+            "full_form": "Computer Science and Engineering"
+        }
     },
     {
         "model": "college.course",
@@ -76,8 +52,8 @@
             "is_deleted": false,
             "stream": 1,
             "name": "MCA",
-            "full_form": "Master of Computer Application",
-        },
+            "full_form": "Master of Computer Application"
+        }
     },
     {
         "model": "college.course",
@@ -88,8 +64,8 @@
             "is_deleted": false,
             "stream": 1,
             "name": "BCA (Plain)",
-            "full_form": "Bachelor of Computer Application",
-        },
+            "full_form": "Bachelor of Computer Application"
+        }
     },
     {
         "model": "college.subject",
@@ -102,8 +78,8 @@
             "semester": 3,
             "code": "MCA217",
             "name": "IoT",
-            "full_form": "Internet of Things",
-        },
+            "full_form": "Internet of Things"
+        }
     },
     {
         "model": "college.subject",
@@ -116,8 +92,8 @@
             "semester": 3,
             "code": "MCA350",
             "name": "DS",
-            "full_form": "Data Science",
-        },
+            "full_form": "Data Science"
+        }
     },
     {
         "model": "college.subject",
@@ -130,8 +106,8 @@
             "semester": 3,
             "code": "MCA360",
             "name": "AJ",
-            "full_form": "Advance Java",
-        },
+            "full_form": "Advance Java"
+        }
     },
     {
         "model": "college.subject",
@@ -144,8 +120,8 @@
             "semester": 3,
             "code": "MCA340",
             "name": "SE",
-            "full_form": "Software Engineering",
-        },
+            "full_form": "Software Engineering"
+        }
     },
     {
         "model": "college.subject",
@@ -158,8 +134,8 @@
             "semester": 3,
             "code": "MCA180",
             "name": "AAD",
-            "full_form": "Android App Development",
-        },
+            "full_form": "Android App Development"
+        }
     },
     {
         "model": "college.room",
@@ -170,8 +146,8 @@
             "is_deleted": false,
             "name": "Lab-1",
             "campus": 2,
-            "department": 1,
-        },
+            "department": 1
+        }
     },
     {
         "model": "college.room",
@@ -182,8 +158,8 @@
             "is_deleted": false,
             "name": "Lab-2",
             "campus": 2,
-            "department": 1,
-        },
+            "department": 1
+        }
     },
     {
         "model": "college.room",
@@ -194,8 +170,8 @@
             "is_deleted": false,
             "name": "Lab-3",
             "campus": 2,
-            "department": 1,
-        },
+            "department": 1
+        }
     },
     {
         "model": "college.room",
@@ -206,8 +182,8 @@
             "is_deleted": false,
             "name": "Lab-4",
             "campus": 2,
-            "department": 1,
-        },
+            "department": 1
+        }
     },
     {
         "model": "college.room",
@@ -218,8 +194,8 @@
             "is_deleted": false,
             "name": "Lab-1",
             "campus": 2,
-            "department": 2,
-        },
+            "department": 2
+        }
     },
     {
         "model": "college.room",
@@ -230,8 +206,8 @@
             "is_deleted": false,
             "name": "Lab-2",
             "campus": 2,
-            "department": 2,
-        },
+            "department": 2
+        }
     },
     {
         "model": "college.attendance",
@@ -245,8 +221,8 @@
             "room": 4,
             "course": 1,
             "subject": 1,
-            "workshop": null,
-        },
+            "workshop": null
+        }
     },
     {
         "model": "college.attendance",
@@ -260,8 +236,8 @@
             "room": 4,
             "course": 1,
             "subject": 1,
-            "workshop": null,
-        },
+            "workshop": null
+        }
     },
     {
         "model": "college.attendance",
@@ -275,8 +251,8 @@
             "room": 4,
             "course": 1,
             "subject": 2,
-            "workshop": null,
-        },
+            "workshop": null
+        }
     },
     {
         "model": "college.attendance",
@@ -290,8 +266,44 @@
             "room": 4,
             "course": 1,
             "subject": 2,
-            "workshop": null,
-        },
+            "workshop": null
+        }
+    },
+    {
+        "model": "device.rfiddevice",
+        "pk": 1,
+        "fields": {
+            "created_at": "2023-10-09T12:45:36.139Z",
+            "modified_at": "2023-10-09T18:49:16.911Z",
+            "is_deleted": false,
+            "device_no": "IoT-1",
+            "room": 4,
+            "course": 1,
+            "subject": 2,
+            "workshop": null
+        }
+    },
+    {
+        "model": "device.rfidtag",
+        "pk": 1,
+        "is_deleted": false,
+        "fields": {
+            "created_at": "2023-10-09T12:45:36.139Z",
+            "modified_at": "2023-10-09T18:49:16.911Z",
+            "profile": null,
+            "tag_uid": "111111aa"
+        }
+    },
+    {
+        "model": "device.rfidtag",
+        "pk": 2,
+        "is_deleted": false,
+        "fields": {
+            "created_at": "2023-10-09T12:45:36.139Z",
+            "modified_at": "2023-10-09T18:49:16.911Z",
+            "profile": null,
+            "tag_uid": "222222bb"
+        }
     },
     {
         "model": "profiles.userprofile",
@@ -303,8 +315,8 @@
             "name": "Vaibhav Bhawsar",
             "enroll_no": "22CSA5MCA1029",
             "email": "vaibhav.bhawsar.77@gmail.com",
-            "mobile_no": "8357860438",
-        },
+            "mobile_no": "8357860438"
+        }
     },
     {
         "model": "profiles.userprofile",
@@ -316,7 +328,7 @@
             "name": "Neelam Patidar",
             "enroll_no": "22CSA5MCA1018",
             "email": "neelampatidar235@gmail.com",
-            "mobile_no": "6260553457",
-        },
-    },
+            "mobile_no": "6260553457"
+        }
+    }
 ]
