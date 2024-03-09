@@ -1,8 +1,7 @@
 services:
 
   # Django WSGI for Gunicorn
-  wsgi_app:
-    container_name: attendly_wsgi
+  django_app:
     build:
       context: ./attendly
     volumes:
@@ -15,7 +14,6 @@ services:
 
   # Database postgres
   db:
-    container_name: postgres_attendly
     image: postgres
     volumes:
       - database:/var/lib/postgres/data
